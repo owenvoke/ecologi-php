@@ -19,7 +19,7 @@
         "pestphp/pest": "^1.0",
         "guzzlehttp/guzzle": "^7.2.0",
         "php-http/mock-client": "^1.4",
-        "phpstan/phpstan": "^0.12.81",
+        "phpstan/phpstan": "^0.12.88",
         "symfony/var-dumper": "^5.1"
     },
     "autoload": {
