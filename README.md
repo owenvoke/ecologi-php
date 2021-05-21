@@ -20,7 +20,7 @@ An object oriented PHP wrapper for the [Ecologi][link-ecologi] API
 Via Composer
 
 ```shell
-$ composer require owenvoke/ecologi guzzlehttp/guzzle:^7.0.1 http-interop/http-factory-guzzle:^1.0
+composer require owenvoke/ecologi guzzlehttp/guzzle:^7.0.1 http-interop/http-factory-guzzle:^1.0
 ```
 
 We are decoupled from any HTTP messaging client with help by [HTTPlug](https://httplug.io).
@@ -34,7 +34,7 @@ We are decoupled from any HTTP messaging client with help by [HTTPlug](https://h
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new \OwenVoke\Ecologi\Client();
-$repositories = $client->reporting()->totalImpact();
+$repositories = $client->report()->totalImpact('owenvoke');
 ```
 
 **Authentication**
@@ -54,7 +54,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Testing
 
 ```shell
-$ composer test
+composer test
 ```
 
 ## Contributing
