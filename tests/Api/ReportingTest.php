@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use OwenVoke\Ecologi\Api\Reporting;
 
-beforeEach(fn() => $this->apiClass = Reporting::class);
+beforeEach(fn () => $this->apiClass = Reporting::class);
 
 it('should get the total impact for a user', function () {
     $expectedArray = ['trees' => 1000, 'carbonOffset' => 10];

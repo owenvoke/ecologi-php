@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use OwenVoke\Ecologi\Api\Purchasing;
 
-beforeEach(fn() => $this->apiClass = Purchasing::class);
+beforeEach(fn () => $this->apiClass = Purchasing::class);
 
 it('should purchase trees', function () {
     $expectedArray = [
