@@ -2,7 +2,7 @@
 
 [Back to the navigation](README.md)
 
-Allows interacting with the [Reporting API](https://docs.ecologi.com/docs/public-api-docs/API/Reporting-API.v1.yaml)
+Allows interacting with the [Reporting API](https://docs.ecologi.com/docs/public-api-docs/API/Reporting-API.v1.yaml).
 
 ### Get total impact for a user
 
