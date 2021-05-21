@@ -18,11 +18,11 @@ class Purchasing extends AbstractApi
         ]);
     }
 
-    public function carbonOffset(int $number, ?string $units = self::UNIT_TONNES, bool $test = false): array
+    public function carbonOffset(int $number, string $units = self::UNIT_TONNES, bool $test = false): array
     {
         return $this->post('/impact/carbon-offset', [
             'number' => $number,
-            'units' => $units ?? self::UNIT_TONNES,
+            'units' => $units,
             'test' => $test,
         ]);
     }

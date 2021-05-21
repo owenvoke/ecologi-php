@@ -16,7 +16,7 @@ $response = $client->purchase()->carbonOffset(1);
 $response = $client->purchase()->carbonOffset(1, Purchasing::UNIT_KG);
 
 // Purchase 1 tonne of carbon offset on the test environment
-$response = $client->purchase()->carbonOffset(1, null, true);
+$response = $client->purchase()->carbonOffset(1, Purchasing::UNIT_TONNES, true);
 ```
 
 ### Purchase Trees
