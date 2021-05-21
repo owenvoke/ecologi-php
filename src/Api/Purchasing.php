@@ -6,7 +6,10 @@ namespace OwenVoke\Ecologi\Api;
 
 class Purchasing extends AbstractApi
 {
-    public function trees(int $number, string $name = null, bool $test = false): array
+    public const UNIT_TONNES = 'Tonnes';
+    public const UNIT_KG = 'KG';
+
+    public function trees(int $number, ?string $name = null, bool $test = false): array
     {
         return $this->post('/impact/trees', [
             'number' => $number,
@@ -15,11 +18,11 @@ class Purchasing extends AbstractApi
         ]);
     }
 
-    public function carbonOffset(int $number, string $units = 'Tonnes', bool $test = false): array
+    public function carbonOffset(int $number, ?string $units = self::UNIT_TONNES, bool $test = false): array
     {
         return $this->post('/impact/carbon-offset', [
             'number' => $number,
-            'units' => $units,
+            'units' => $units ?? self::UNIT_TONNES,
             'test' => $test,
         ]);
     }
