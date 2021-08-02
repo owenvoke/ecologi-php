@@ -14,10 +14,10 @@
         "psr/http-message": "^1.0"
     },
     "require-dev": {
+        "guzzlehttp/guzzle": "^7.2.0",
         "guzzlehttp/psr7": "^1.6",
         "http-interop/http-factory-guzzle": "^1.0",
-        "pestphp/pest": "^1.2",
-        "guzzlehttp/guzzle": "^7.2.0",
+        "pestphp/pest": "^1.12",
         "php-http/mock-client": "^1.4",
         "phpstan/phpstan": "^0.12.88",
         "symfony/var-dumper": "^5.1"
