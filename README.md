@@ -48,7 +48,7 @@ $repositories = $client->report()->totalImpact('owenvoke');
 ```php
 use OwenVoke\Ecologi\Client;
 $client = new Client();
-$client->authenticate($apiToken, Client::AUTH_ACCESS_TOKEN);
+$client->authenticate($apiToken, null, Client::AUTH_ACCESS_TOKEN);
 ```
 
 ## Change log
