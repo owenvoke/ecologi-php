@@ -34,10 +34,9 @@ abstract class AbstractApi
     /**
      * Send a GET request with query parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     GET parameters.
-     * @param array  $requestHeaders Request Headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  GET parameters.
+     * @param  array  $requestHeaders  Request Headers.
      * @return array|string
      */
     protected function get(string $path, array $parameters = [], array $requestHeaders = [])
@@ -62,10 +61,9 @@ abstract class AbstractApi
     /**
      * Send a HEAD request with query parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     HEAD parameters.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  HEAD parameters.
+     * @param  array  $requestHeaders  Request headers.
      * @return ResponseInterface
      */
     protected function head(string $path, array $parameters = [], array $requestHeaders = []): ResponseInterface
@@ -80,10 +78,9 @@ abstract class AbstractApi
     /**
      * Send a POST request with JSON-encoded parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     POST parameters to be JSON encoded.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  POST parameters to be JSON encoded.
+     * @param  array  $requestHeaders  Request headers.
      * @return array|string
      */
     protected function post(string $path, array $parameters = [], array $requestHeaders = [])
@@ -98,10 +95,9 @@ abstract class AbstractApi
     /**
      * Send a POST request with raw data.
      *
-     * @param string $path           Request path.
-     * @param string $body           Request body.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  string  $body  Request body.
+     * @param  array  $requestHeaders  Request headers.
      * @return array|string
      */
     protected function postRaw(string $path, string $body, array $requestHeaders = [])
@@ -118,10 +114,9 @@ abstract class AbstractApi
     /**
      * Send a PATCH request with JSON-encoded parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     POST parameters to be JSON encoded.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  POST parameters to be JSON encoded.
+     * @param  array  $requestHeaders  Request headers.
      * @return array|string
      */
     protected function patch(string $path, array $parameters = [], array $requestHeaders = [])
@@ -138,10 +133,9 @@ abstract class AbstractApi
     /**
      * Send a PUT request with JSON-encoded parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     POST parameters to be JSON encoded.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  POST parameters to be JSON encoded.
+     * @param  array  $requestHeaders  Request headers.
      * @return array|string
      */
     protected function put(string $path, array $parameters = [], array $requestHeaders = [])
@@ -158,10 +152,9 @@ abstract class AbstractApi
     /**
      * Send a DELETE request with JSON-encoded parameters.
      *
-     * @param string $path           Request path.
-     * @param array  $parameters     POST parameters to be JSON encoded.
-     * @param array  $requestHeaders Request headers.
-     *
+     * @param  string  $path  Request path.
+     * @param  array  $parameters  POST parameters to be JSON encoded.
+     * @param  array  $requestHeaders  Request headers.
      * @return array|string
      */
     protected function delete(string $path, array $parameters = [], array $requestHeaders = [])
@@ -178,8 +171,7 @@ abstract class AbstractApi
     /**
      * Create a JSON encoded version of an array of parameters.
      *
-     * @param array $parameters Request parameters
-     *
+     * @param  array  $parameters  Request parameters
      * @return string|null
      */
     protected function createJsonBody(array $parameters): ?string
