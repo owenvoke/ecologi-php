@@ -18,8 +18,8 @@ final class Authentication implements Plugin
     private ?string $method;
 
     /**
-     * @param  string  $tokenOrLogin  Gitea private token/username/client ID
-     * @param  string|null  $password  Gitea password/secret (optionally can contain $method)
+     * @param  string  $tokenOrLogin  Private token/username/client ID
+     * @param  string|null  $password  Password/secret (optionally can contain $method)
      * @param  string|null  $method  One of the AUTH_* class constants
      */
     public function __construct(string $tokenOrLogin, ?string $password, ?string $method)
