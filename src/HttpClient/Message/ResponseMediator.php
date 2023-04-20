@@ -7,7 +7,6 @@ use Psr\Http\Message\ResponseInterface;
 final class ResponseMediator
 {
     /**
-     * @param  ResponseInterface  $response
      * @return array|string
      */
     public static function getContent(ResponseInterface $response)
@@ -24,7 +23,6 @@ final class ResponseMediator
     }
 
     /**
-     * @param  ResponseInterface  $response
      * @return array|void
      */
     public static function getPagination(ResponseInterface $response)
@@ -49,7 +47,6 @@ final class ResponseMediator
     /**
      * Get the value for a single header.
      *
-     * @param  ResponseInterface  $response
      * @param  string  $name
      * @return string|null
      */

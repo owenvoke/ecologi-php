@@ -7,6 +7,7 @@ namespace OwenVoke\Ecologi\Api;
 class Purchasing extends AbstractApi
 {
     public const UNIT_TONNES = 'Tonnes';
+
     public const UNIT_KG = 'KG';
 
     public function trees(int $number, ?string $name = null, bool $test = false): array

@@ -63,7 +63,6 @@ final class Builder
     /**
      * Add a new plugin to the end of the plugin chain.
      *
-     * @param  Plugin  $plugin
      * @return void
      */
     public function addPlugin(Plugin $plugin)
@@ -102,7 +101,6 @@ final class Builder
     }
 
     /**
-     * @param  array  $headers
      * @return void
      */
     public function addHeaders(array $headers)

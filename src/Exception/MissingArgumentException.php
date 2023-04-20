@@ -7,7 +7,7 @@ use Throwable;
 
 class MissingArgumentException extends ErrorException
 {
-    /** @param string|array<int, string> $required */
+    /** @param  string|array<int, string>  $required */
     public function __construct($required, int $code = 0, ?Throwable $previous = null)
     {
         if (is_string($required)) {

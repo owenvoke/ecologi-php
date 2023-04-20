@@ -4,23 +4,24 @@
     "description": "An object oriented PHP wrapper for the Ecologi API",
     "license": "MIT",
     "require": {
-        "php": "^7.4 || ^8.0",
-        "php-http/client-common": "^2.3",
-        "php-http/discovery": "^1.12",
-        "php-http/httplug": "^2.2",
-        "php-http/multipart-stream-builder": "^1.1",
+        "php": "^8.2",
+        "php-http/client-common": "^2.6.1",
+        "php-http/discovery": "^1.15.3",
+        "php-http/httplug": "^2.4",
+        "php-http/multipart-stream-builder": "^1.2",
         "psr/http-client-implementation": "^1.0",
         "psr/http-factory-implementation": "^1.0",
-        "psr/http-message": "^1.0"
+        "psr/http-message": "^1.1"
     },
     "require-dev": {
-        "guzzlehttp/guzzle": "^7.4",
-        "guzzlehttp/psr7": "^2.1",
+        "guzzlehttp/guzzle": "^7.5.1",
+        "guzzlehttp/psr7": "^2.5",
         "http-interop/http-factory-guzzle": "^1.2",
-        "pestphp/pest": "^1.20",
+        "laravel/pint": "^1.9",
+        "pestphp/pest": "^1.23",
         "php-http/mock-client": "^1.5",
-        "phpstan/phpstan": "^0.12.99",
-        "symfony/var-dumper": "^5.3.8"
+        "phpstan/phpstan": "^1.10.14",
+        "symfony/var-dumper": "^5.4.22"
     },
     "autoload": {
         "psr-4": {
@@ -33,15 +34,22 @@
         }
     },
     "scripts": {
+        "lint": "pint --ansi",
+        "test:lint": "pint --test --ansi",
         "test:types": "phpstan analyse --ansi --memory-limit=-1",
         "test:unit": "pest --colors=always",
         "test": [
+            "@test:lint",
             "@test:types",
             "@test:unit"
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

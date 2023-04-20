@@ -4,10 +4,3 @@ parameters:
     - src/
 
   checkMissingIterableValueType: false
-  checkGenericClassInNonGenericObjectType: false
-  reportUnmatchedIgnoredErrors: true
-
-  ignoreErrors:
-  # Ignore typehint errors on api classes
-  - message: '#Method (.*) has no return typehint specified\.#'
-    path: src/Api
